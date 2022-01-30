@@ -1,0 +1,83 @@
+#products-section {
+  display: flex;
+  flex-direction: row;
+}
+
+#aside {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.side-button {
+  font-size: 1rem;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  width: 200px;
+  padding: 20px;
+  height: 60px;
+  border: none;
+  box-shadow: 0 0 2px grey;
+  margin: 5px 0;
+  background: #AFDCEC;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  transition: background-color 0.5s ease-out;
+}
+.side-button:hover {
+  background-color: #6698ff;
+}
+
+#main {
+  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+  grid-gap: 30px;
+  /* applied flex grow as it is a child of product section flex and we want to take all the space remaining */
+  flex-grow: 1;
+}
+#product-image {
+  height: 70%;
+  width: 100%;
+  margin: 0;
+  border-bottom: 1px solid grey;
+}
+.product-layout {
+  display: flex;
+  flex-direction: column;
+  height: 350px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 8px;
+}
+.product-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5px 10px 15px 10px;
+}
+#item-name {
+  font-size: 1.5rem;
+  margin: 0 10px;
+}
+#item-price {
+  font-size: 1.1rem;
+}
+.cart-button {
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  background-color: #87CEEB;
+  cursor: pointer;
+  width: 130px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: background-color 0.3s ease-out, transform 0.3s ease-out;
+}
+
+.cart-button:hover {
+  background-color: #f9db24;
+  transform: scale(1.1);
+}
